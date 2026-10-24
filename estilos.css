@@ -67,16 +67,18 @@ header.topbar{ background:var(--grafito); padding:12px 16px; }
 .aviso-inner{ display:flex; gap:10px; align-items:flex-start; padding:10px 16px; }
 .aviso-txt{ margin:0; font-size:14px; line-height:1.45; }
 .aviso-txt a{ font-weight:700; color:#5C4413; }
-/* Invitación a sugerir: botón, para que se distinga de la advertencia. Blanco sobre --boton = 4,67:1 */
-.aviso-cta{ display:inline-flex; align-items:center; min-height:34px; background:var(--boton); color:#fff;
-  text-decoration:none; font-weight:700; font-size:13px; border-radius:999px; padding:0 14px; white-space:nowrap; }
-.aviso-cta:hover{ background:var(--boton-hover); }
+/* Invitación a sugerir: botón, para que se distinga de la advertencia. Blanco sobre --boton = 4,67:1.
+   Va con `a.aviso-cta` a propósito: sin eso, `.aviso-txt a` de arriba le gana y lo deja café sobre coral. */
+.aviso-txt a.aviso-cta{ display:inline-flex; align-items:center; min-height:34px; background:var(--boton);
+  color:#fff; text-decoration:none; font-weight:700; font-size:13px; border-radius:999px;
+  padding:0 14px; white-space:nowrap; }
+.aviso-txt a.aviso-cta:hover{ background:var(--boton-hover); color:#fff; }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]) .aviso-proto{ background:#3A2F1C; color:#F3DFB8; }
-  :root:not([data-theme="light"]) .aviso-txt a{ color:#F3DFB8; }
+  :root:not([data-theme="light"]) .aviso-txt a:not(.aviso-cta){ color:#F3DFB8; }
 }
 :root[data-theme="dark"] .aviso-proto{ background:#3A2F1C; color:#F3DFB8; }
-:root[data-theme="dark"] .aviso-txt a{ color:#F3DFB8; }
+:root[data-theme="dark"] .aviso-txt a:not(.aviso-cta){ color:#F3DFB8; }
 
 /* ---------- Portada ---------- */
 .hero{ padding:44px 0 36px; }
