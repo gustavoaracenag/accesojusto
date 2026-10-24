@@ -483,7 +483,7 @@
 
   // La versión de un solo archivo trae el catálogo incrustado; la web lo descarga.
   if (window.AJ_CATALOGO) iniciar(window.AJ_CATALOGO);
-  else fetch("data/fichas.json", { cache: "no-cache" })
+  else fetch("fichas.json", { cache: "no-cache" })
     .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
     .then(iniciar)
     .catch(errorCarga);
