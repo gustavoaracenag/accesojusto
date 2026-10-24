@@ -55,8 +55,9 @@ main{ max-width:860px; margin:0 auto; padding:0 16px 56px; }
 /* ---------- Encabezado y aviso ---------- */
 header.topbar{ background:var(--grafito); padding:12px 16px; }
 .topbar-inner{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
-.brand{ color:var(--crema); font-family:'Fraunces', Georgia, serif; font-size:21px; font-weight:700; letter-spacing:-0.3px; }
+.brand{ color:var(--crema); font-family:'Fraunces', Georgia, serif; font-size:21px; font-weight:700; letter-spacing:-0.3px; display:flex; align-items:baseline; gap:8px; }
 .brand span{ color:var(--coral); }
+.version-badge{ font-family:'Atkinson Hyperlegible',Arial,sans-serif; font-size:11px; font-weight:400; color:#B5ABA4; letter-spacing:0.5px; }
 .subbrand{ color:#B5ABA4; font-size:12px; letter-spacing:1.4px; text-transform:uppercase; margin-top:2px; }
 .btn-reset{
   background:transparent; color:var(--crema); border:1px solid #8A817B; border-radius:4px;
