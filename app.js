@@ -83,12 +83,11 @@
   }
 
   // ---------- Aviso de prototipo: compacto, en todas las pantallas y al imprimir ----------
-  function avisoPrototipo(conLink) {
+  function avisoPrototipo() {
     return '<div class="aviso-proto" role="note"><div class="wrap aviso-inner">' + icono("aviso", 18) +
-      '<p class="aviso-txt"><b>Prototipo en validación.</b>' +
-      '<span class="no-print"> ¿Qué mejorarías? ' + linkContacto("comentario", "", "aviso-link", "Cuéntanos en 1 minuto") + ".</span>" +
-      " Confirma cada dato en la institución antes de hacer un trámite." +
-      (conLink ? ' <a href="#datos" class="no-print">Cómo revisamos</a>' : "") + "</p></div></div>";
+      '<p class="aviso-txt"><b>Prototipo en validación.</b> Confirma cada dato en la institución antes de hacer un trámite.' +
+      '<span class="no-print"> ' + linkContacto("comentario", "", "aviso-cta", "¿Qué mejorarías? Cuéntanos") + "</span>" +
+      "</p></div></div>";
   }
 
   // ---------- Navegación ----------
@@ -233,7 +232,7 @@
         '<div><div class="brand">Acceso<span>Justo</span><span class="version-badge">v' + esc(CFG.VERSION) + '</span></div><div class="subbrand">Un solo diagnóstico · todos los beneficios</div></div>' +
         (STATE.pantalla !== "inicio" ? '<button class="btn-reset" onclick="reiniciar()">Empezar de nuevo</button>' : "") +
       "</div></header>" +
-      avisoPrototipo(STATE.pantalla === "inicio") +
+      avisoPrototipo() +
       "<main>" + innerHtml + "</main>" +
       '<footer><div class="wrap">' +
         "AccesoJusto es una iniciativa independiente. No es un organismo del Estado. La confirmación final de cada beneficio la entrega la institución que corresponde." +
@@ -446,11 +445,18 @@
             "Algunas apps, como WhatsApp o LinkedIn, abren los links en un navegador que no permite imprimir. " +
             "Abre esta página en Chrome o Safari (menú o compartir → «Abrir en el navegador») y vuelve a tocar el botón. " +
             "En el computador también puedes usar Ctrl+P (o Cmd+P en Mac).</p>" : "") +
-          linkContacto(null, "", "link-fuerte", "¿Viste un dato malo o tienes una idea? Escríbenos") +
-          (formularioListo() ? "" : '<span class="nota-pendiente">El formulario de contacto está en preparación.</span>') +
           '<div><button class="motor-toggle" onclick="toggleMotor()">' + (STATE.verMotor ? "Ocultar" : "Ver") + " las reglas que se aplicaron</button>" +
           (STATE.verMotor ? '<div class="motor-panel"><div class="motor-nota">El motor es determinista: mismas respuestas, mismo resultado. No hay generación de texto en esta capa.</div>' + reglasHtml + '<div class="chips">' + chipsHtml + "</div></div>" : "") +
           "</div>" +
+        "</section>" +
+        '<section class="sugerencia no-print">' +
+          "<h2>¿Te sirvió este plan?</h2>" +
+          "<p>Estamos mejorando AccesoJusto con lo que nos cuenta la gente. Dinos qué te faltó, qué no se entendió " +
+          "o qué dato no calzaba con lo que te dijeron en la institución.</p>" +
+          linkContacto("comentario", "", "btn-sugerencia", "Dejar mi sugerencia") +
+          (formularioListo()
+            ? '<span class="sugerencia-nota">Toma 1 minuto y no te pedimos tus datos.</span>'
+            : '<span class="nota-pendiente">El formulario de contacto está en preparación.</span>') +
         "</section>" +
       "</div>"
     );
