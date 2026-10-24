@@ -228,7 +228,7 @@
     const n = CATALOGO.fichas.length, nAreas = Object.keys(AREAS).length;
     return (
       '<header class="topbar no-print"><div class="wrap topbar-inner">' +
-        '<div><div class="brand">Acceso<span>Justo</span></div><div class="subbrand">Un solo diagnóstico · todos los beneficios</div></div>' +
+        '<div><div class="brand">Acceso<span>Justo</span><span class="version-badge">v' + esc(CFG.VERSION) + '</span></div><div class="subbrand">Un solo diagnóstico · todos los beneficios</div></div>' +
         (STATE.pantalla !== "inicio" ? '<button class="btn-reset" onclick="reiniciar()">Empezar de nuevo</button>' : "") +
       "</div></header>" +
       avisoPrototipo(STATE.pantalla === "inicio") +
@@ -303,7 +303,7 @@
         '<h1>No tienes que saber qué buscar. <span class="accent">Responde y te decimos lo que te corresponde.</span></h1>' +
         "<p>Entre " + RANGO.min + " y " + RANGO.max + " preguntas según tu situación. Al final recibes tu plan con los pasos para conseguir cada beneficio. Gratis, sin registro y sin dejar tus datos.</p>" +
         '<button class="btn-hero" onclick="empezar()">Empezar el diagnóstico</button>' +
-        '<div class="stats"><span><b>' + n + "</b>beneficios</span><span><b>" + nAreas + "</b>áreas</span><span><b>0</b>datos guardados</span></div>" +
+        '<div class="stats"><span><b>' + n + "</b>beneficios</span><span><b>" + nAreas + "</b>áreas</span></div>" +
       "</section>" +
       seccionEjemplo() + seccionQuien() + seccionDatos()
     );
