@@ -1,0 +1,16 @@
+{
+  "name": "accesojusto",
+  "version": "5.2.0",
+  "description": "Asistente gratuito que diagnostica a qué beneficios sociales del Estado de Chile puede acceder una persona y le muestra los pasos para obtenerlos.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test \"tests/*.test.js\"",
+    "empaquetar": "node scripts/empaquetar.js",
+    "verificar": "node scripts/verificar-publicacion.js",
+    "servir": "python3 -m http.server 8000"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

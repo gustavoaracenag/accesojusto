@@ -1,0 +1,1196 @@
+{
+  "meta": {
+    "version": "5.2",
+    "actualizado": "2026-10-23",
+    "descripcion": "Catálogo de fichas de AccesoJusto. Cada ficha guarda su fuente y el mes de la última revisión contra la fuente oficial (null = sin revisar). Ninguna ficha tiene aún validación experta.",
+    "licencia": "CC BY 4.0"
+  },
+  "areas": {
+    "Discapacidad": {
+      "color": "#AC3B1C",
+      "color_oscuro": "#F08A6F"
+    },
+    "Adulto Mayor": {
+      "color": "#8A5A0B",
+      "color_oscuro": "#E9B65A"
+    },
+    "Educación": {
+      "color": "#2A6F7D",
+      "color_oscuro": "#7CC4D0"
+    },
+    "Familia y Hogar": {
+      "color": "#6B4E9B",
+      "color_oscuro": "#B49BE0"
+    },
+    "Vivienda": {
+      "color": "#28704F",
+      "color_oscuro": "#6FCF97"
+    },
+    "Salud": {
+      "color": "#A3352B",
+      "color_oscuro": "#E8857A"
+    },
+    "Cuidados": {
+      "color": "#8E4522",
+      "color_oscuro": "#E3A27E"
+    },
+    "Cultura y transporte": {
+      "color": "#7A5C30",
+      "color_oscuro": "#C9A877"
+    }
+  },
+  "fichas": [
+    {
+      "id": "rnd",
+      "nombre": "Credencial de discapacidad (COMPIN + RND)",
+      "area": "Discapacidad",
+      "desc": "La puerta de entrada: habilita casi todos los beneficios de discapacidad.",
+      "monto": null,
+      "fuente": {
+        "texto": "ChileAtiende · Registro Civil",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/3184-credencial-de-discapacidad",
+        "texto": "Ir a ChileAtiende"
+      },
+      "docs": "Cédula de identidad + informe médico IBM.",
+      "convocatoria": null,
+      "ruta": [
+        "Pide hora con el médico tratante (consultorio u hospital) y solicita el informe IBM. Dile que es “para certificar discapacidad en la COMPIN”.",
+        "Con ese informe se ingresa la solicitud a la COMPIN. Puede hacerlo el consultorio o tú directamente.",
+        "La COMPIN evalúa y emite la certificación. Puede tomar semanas: marca este paso cuando lo hayas ingresado para hacerle seguimiento.",
+        "Con la certificación, la inscripción en el Registro Civil deja lista la credencial."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "rsh",
+      "nombre": "Registro Social de Hogares (RSH) al día",
+      "area": "Familia y Hogar",
+      "desc": "Requisito socioeconómico de la mayoría de los programas del Estado.",
+      "monto": null,
+      "fuente": {
+        "texto": "registrosocial.gob.cl",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.registrosocial.gob.cl",
+        "texto": "Ir a registrosocial.gob.cl"
+      },
+      "docs": "ClaveÚnica del jefe o jefa de hogar.",
+      "convocatoria": null,
+      "ruta": [
+        "Entra a registrosocial.gob.cl con tu ClaveÚnica (si no la tienes, se saca en el Registro Civil en 5 minutos).",
+        "Si tu hogar no está inscrito, solicita el ingreso; si está desactualizado (cambio de casa, integrantes, ingresos), pide la actualización.",
+        "También puedes hacerlo presencial en el departamento social de tu municipalidad.",
+        "La actualización demora unos 30 a 45 días. Vuelve a revisar que quedó al día."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "chilecuida",
+      "nombre": "Chile Cuida y Credencial de Persona Cuidadora",
+      "area": "Cuidados",
+      "desc": "Apoyos para quien cuida: respiro, atención domiciliaria y acceso preferente a otros beneficios. La credencial es la puerta de entrada.",
+      "monto": null,
+      "fuente": {
+        "texto": "chilecuida.gob.cl · Ley Chile Cuida (publicada en febrero de 2026)",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.chilecuida.gob.cl",
+        "texto": "Ir a chilecuida.gob.cl"
+      },
+      "docs": "Cédula de quien cuida y de la persona cuidada, y Registro Social de Hogares.",
+      "convocatoria": null,
+      "ruta": [
+        "Inscríbete como persona cuidadora en el Registro Social de Hogares. De ahí sale la Credencial de Persona Cuidadora, que da acceso preferente a programas del Estado.",
+        "Revisa si tu comuna tiene cobertura de la Red Local de Apoyos y Cuidados, que está en 215 comunas y sigue creciendo.",
+        "Anda al departamento social de tu municipalidad y pide el ingreso a Chile Cuida: el municipio es la puerta de entrada del sistema.",
+        "Un equipo evalúa la situación de cuidado y arma el plan de apoyos: respiro, atención domiciliaria, centros comunitarios de cuidados."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "subsidioElectrico",
+      "nombre": "Subsidio Eléctrico (descuento en la cuenta de la luz)",
+      "area": "Familia y Hogar",
+      "desc": "Descuento directo en la boleta de electricidad. Si en la casa vive una persona electrodependiente, no importa el tramo del Registro Social de Hogares.",
+      "monto": null,
+      "fuente": {
+        "texto": "Ministerio de Energía · ChileAtiende",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/124375-subsidio-electrico",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "ClaveÚnica, el número de cliente que aparece en la boleta de la luz, y estar al día en los pagos.",
+      "convocatoria": "Se postula por convocatorias. La quinta fue del 26 de mayo al 5 de junio de 2026; la siguiente aún no se anuncia.",
+      "ruta": [
+        "Revisa si tu hogar está en el 40% más vulnerable del Registro Social de Hogares. Si en la casa vive una persona electrodependiente inscrita en el registro, puedes postular igual sin importar el tramo.",
+        "Ten a mano la boleta de la luz: necesitas el número de cliente y la empresa que entrega el suministro.",
+        "Postula en línea con ClaveÚnica cuando abra la convocatoria, o de forma presencial en ChileAtiende.",
+        "Anota bien tu correo: los resultados llegan ahí. Si te lo dan, el descuento aparece solo en la boleta, no te depositan plata."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "subsidio18",
+      "nombre": "Subsidio de discapacidad para menores de 18 años",
+      "area": "Discapacidad",
+      "desc": "Pago mensual de $125.138 (monto 2026) para niños, niñas y adolescentes con discapacidad, en hogares del 60% del Registro Social de Hogares.",
+      "monto": {
+        "tipo": "mensual",
+        "valor": 125138
+      },
+      "fuente": {
+        "texto": "Ventanilla Única Social · IPS (ficha actualizada 25-09-2026)",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/3026-subsidio-para-personas-con-discapacidad-mental-menores-de-18-anos",
+        "texto": "Ir a ChileAtiende"
+      },
+      "docs": "Certificado de discapacidad de la COMPIN o del Registro Nacional de la Discapacidad, cédulas, y un documento que acredite quién cuida al niño o niña.",
+      "convocatoria": null,
+      "ruta": [
+        "Revisa si cumple: menor de 18 años, hogar en el 60% del Registro Social de Hogares y 3 años seguidos viviendo en Chile.",
+        "La discapacidad debe estar certificada: mental, o física o sensorial de al menos 50%. Sirve el certificado de la COMPIN o la credencial del Registro Nacional de la Discapacidad.",
+        "Solicítalo en línea en ChileAtiende con el RUT del niño o niña, o en una sucursal ChileAtiende o una municipalidad con convenio con el IPS.",
+        "Lleva también un documento que acredite quién lo cuida (informe social o resolución judicial). La postulación es gratis. Dudas: llama al 101."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "ayudastec",
+      "nombre": "Ayudas técnicas SENADIS (Programa Regular)",
+      "area": "Discapacidad",
+      "desc": "Sillas de ruedas, audífonos, catres clínicos, notebooks y más. Hasta 2 ayudas.",
+      "monto": null,
+      "fuente": {
+        "texto": "ChileAtiende · SENADIS (convocatoria 2026)",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/140696-programa-regular-de-ayudas-tecnicas",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "Credencial RND, RSH (70% más vulnerable), prescripción profesional. Tener 10 años o más y no haber recibido ayudas en la convocatoria del año anterior.",
+      "convocatoria": "Ventana anual corta. En 2026 cerró el 7 de abril. Revisa senadis.gob.cl a comienzos de año.",
+      "ruta": [
+        "Pide a un profesional de salud (médico, kinesiólogo, terapeuta ocupacional) la prescripción de la ayuda técnica que necesita.",
+        "Reúne: credencial de discapacidad, RSH al día y la prescripción.",
+        "Postula en línea en la plataforma de SENADIS cuando abra la convocatoria.",
+        "Si se adjudica, SENADIS coordina la entrega. Guarda el número de postulación para el seguimiento."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "ayudastecSO",
+      "nombre": "Ayudas técnicas vía Seguridades y Oportunidades",
+      "area": "Discapacidad",
+      "desc": "Hasta 3 ayudas con costo total cubierto, con gestor de acompañamiento.",
+      "monto": null,
+      "fuente": {
+        "texto": "SENADIS · Ministerio de Desarrollo Social y Familia",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/2710-financiamiento-de-ayudas-tecnicas-para-personas-con-discapacidad-del-subsistema-de-seguridades-y-oportunidades",
+        "texto": "Ir a ChileAtiende"
+      },
+      "docs": "Credencial RND, RSH, participación vigente en el programa.",
+      "convocatoria": "Ventana anual. En 2026 cerró el 7 de mayo.",
+      "ruta": [
+        "Confirma con tu gestor o gestora del programa (Familias, Vínculos o Calle) que la participación está vigente.",
+        "Pide la prescripción de la ayuda técnica a un profesional de salud.",
+        "La postulación se canaliza con apoyo del equipo ejecutor del programa (cubre costo total, hasta 3 ayudas).",
+        "Adjudicada, se coordina la entrega."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "becaSenadis",
+      "nombre": "Beca SENADIS educación superior",
+      "area": "Educación",
+      "desc": "Servicios de apoyo (asistente o intérprete de lengua de señas) y materiales para estudiar: hasta $4.135.000 en la modalidad mixta.",
+      "monto": null,
+      "fuente": {
+        "texto": "ChileAtiende · SENADIS (convocatoria 2026)",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.senadis.gob.cl",
+        "texto": "Ir a senadis.gob.cl"
+      },
+      "docs": "Credencial RND, RSH (70%), matrícula o carta de aceptación (primera carrera).",
+      "convocatoria": "Enero–febrero. En 2026 cerró el 6 de febrero. La fecha de 2027 aún no se publica.",
+      "ruta": [
+        "Asegura la matrícula o carta de aceptación en la institución de educación superior (debe ser primera carrera).",
+        "Ten lista la credencial de discapacidad y el RSH al día.",
+        "Postula en la plataforma SENADIS en la ventana de enero-febrero. Es corta.",
+        "Adjudicada, se financian servicios de apoyo, materiales y tecnologías para el año académico."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "formate",
+      "nombre": "Fórmate para el Trabajo, línea Discapacidad (SENCE)",
+      "area": "Discapacidad",
+      "desc": "Capacitación en oficios + subsidio diario de asistencia y cuidado.",
+      "monto": null,
+      "fuente": {
+        "texto": "sence.gob.cl",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.sence.gob.cl",
+        "texto": "Ir a sence.gob.cl"
+      },
+      "docs": "Cédula, credencial RND, RSH (40% más vulnerable).",
+      "convocatoria": null,
+      "ruta": [
+        "Revisa los cursos disponibles de la línea Discapacidad en sence.gob.cl (hay presenciales y en línea, por comuna).",
+        "Inscríbete en el curso elegido con tu cédula y credencial; el ejecutor valida los requisitos.",
+        "Asiste a la capacitación: incluye subsidio diario por asistencia y, si corresponde, subsidio de cuidado.",
+        "Al egresar hay apoyo de intermediación laboral."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "pbsi",
+      "nombre": "Pensión Básica Solidaria de Invalidez",
+      "area": "Discapacidad",
+      "desc": "Pensión mensual de $250.275 (igual a la PGU) para personas de 18 a 64 años con invalidez que no tienen derecho a otra pensión.",
+      "monto": {
+        "tipo": "mensual",
+        "valor": 250275
+      },
+      "fuente": {
+        "texto": "ChileAtiende · IPS",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/5178-pension-basica-solidaria-de-invalidez-pbsi",
+        "texto": "Ir a ChileAtiende"
+      },
+      "docs": "Cédula y Registro Social de Hogares. La invalidez la certifica una comisión médica después de que postulas.",
+      "convocatoria": null,
+      "ruta": [
+        "Revisa si cumples: tener entre 18 y 64 años, estar en el 80% más vulnerable según el puntaje de focalización, y haber vivido en Chile 5 de los últimos 6 años.",
+        "No debes tener derecho a otra pensión, ni propia ni de sobrevivencia.",
+        "Solicítala en ChileAtiende (en línea con ClaveÚnica o en una sucursal). Ya no necesitas llegar con la invalidez declarada: el IPS pide la evaluación de la comisión médica después.",
+        "Aprobada, el pago es mensual. A los 65 años pasa a la PGU."
+      ],
+      "validacion_experta": false,
+      "observaciones": [
+        "v5.0: el motor la bloquea si falta el RSH, igual que la PGU. El requisito del 80% se mide con el Puntaje de Focalización Previsional, que usa datos del RSH (dato de prensa, Meganoticias sept 2025; la ficha de ChileAtiende no lo dice explícitamente). Pendiente validación experta.",
+        "Contradicción entre fuentes oficiales: ChileAtiende dice que no se necesita la invalidez declarada antes de postular; Ventanilla Única Social todavía la pide. La ficha sigue a ChileAtiende."
+      ]
+    },
+    {
+      "id": "ricarteSoto",
+      "nombre": "Ley Ricarte Soto (tratamientos de alto costo)",
+      "area": "Salud",
+      "desc": "Cubre el 100% del costo de medicamentos, dispositivos médicos o alimentos de alto costo para las enfermedades que están en la lista oficial.",
+      "monto": null,
+      "fuente": {
+        "texto": "Fonasa · Ley 20.850",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.fonasa.gob.cl/derechos-y-proteccion-financiera/ley-ricarte-soto/",
+        "texto": "Ver en Fonasa"
+      },
+      "docs": "No necesitas reunir documentos: los pide el médico. Sí debes tener tu situación previsional al día (Fonasa, Isapre o FF.AA.).",
+      "convocatoria": null,
+      "ruta": [
+        "Primero revisa si la enfermedad está en la lista cubierta: la ley cubre problemas de salud específicos, no todas las enfermedades.",
+        "Pide hora con un médico especialista del sistema público. Dile que crees que el tratamiento podría estar cubierto por la Ley Ricarte Soto.",
+        "El médico especialista es quien hace la postulación en la plataforma de Fonasa. Tú no puedes postular por tu cuenta.",
+        "Si te aceptan, el tratamiento es gratis, pero solo si te atiendes en la red de prestadores que define el Ministerio de Salud. Pregunta cuál te corresponde."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "franquiciaDisc",
+      "nombre": "Franquicia para importar vehículo o ayudas (Ley 20.422)",
+      "area": "Discapacidad",
+      "desc": "Permite traer al país un vehículo o elementos de apoyo sin pagar los impuestos de importación.",
+      "monto": null,
+      "fuente": {
+        "texto": "Servicio Nacional de Aduanas · ChileAtiende",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/102249-solicitud-de-franquicia-por-discapacidad",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "Certificado de discapacidad y resolución de la COMPIN del domicilio de la persona.",
+      "convocatoria": null,
+      "ruta": [
+        "Pide en la COMPIN de tu comuna la resolución de franquicia. Si vas a traer un vehículo, en esa resolución pueden incluir los equipos especiales que necesita.",
+        "Con la resolución lista, haz la solicitud en el sitio de Aduanas con tu RUN y ClaveÚnica.",
+        "Elige el vehículo: debe quedar facturado a nombre de la persona con discapacidad, aunque ella no maneje.",
+        "Importante: el vehículo debe quedarse al menos tres años destinado al traslado de la persona con discapacidad. No se puede vender antes."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "permisoCirculacion",
+      "nombre": "Rebaja del permiso de circulación",
+      "area": "Discapacidad",
+      "desc": "Si trajiste el vehículo con la franquicia de discapacidad, la patente se calcula sobre el 25% del valor del auto.",
+      "monto": null,
+      "fuente": {
+        "texto": "SENADIS · Decreto Ley 3.063",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.senadis.gob.cl",
+        "texto": "Ver en senadis.gob.cl"
+      },
+      "docs": "Resolución de franquicia, credencial de discapacidad y los papeles normales del vehículo.",
+      "convocatoria": null,
+      "ruta": [
+        "Este beneficio es solo para vehículos que se importaron acogiéndose a la franquicia arancelaria por discapacidad.",
+        "Cada enero el Servicio de Impuestos Internos publica la tasación de los vehículos. Sobre ese valor se calcula la patente.",
+        "Al pagar el permiso en la municipalidad, presenta la resolución de franquicia y pide que se aplique el cálculo sobre el 25% del valor.",
+        "Si el municipio no conoce el beneficio, muestra el Decreto Ley 3.063. Es un derecho, no una gestión a criterio del funcionario."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "pie",
+      "nombre": "Programa de Integración Escolar (PIE)",
+      "area": "Educación",
+      "desc": "Apoyo de profesionales dentro del colegio para estudiantes que necesitan más ayuda para aprender. No tiene costo para la familia.",
+      "monto": null,
+      "fuente": {
+        "texto": "Mineduc · Ayuda Mineduc",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.ayudamineduc.cl/ficha/incorporacion-de-estudiantes-al-programa-de-integracion-escolar",
+        "texto": "Ver en Ayuda Mineduc"
+      },
+      "docs": "Informes médicos o de especialista según el diagnóstico. El colegio indica cuáles.",
+      "convocatoria": null,
+      "ruta": [
+        "Pide una reunión con el encargado o encargada de PIE del colegio y cuenta qué apoyos necesita el estudiante.",
+        "El colegio debe completar el FUDEI (Formulario Único de Evaluación Integral). Sin ese formulario terminado, el estudiante no puede entrar al programa.",
+        "Se hace una evaluación con los profesionales que corresponda, según el diagnóstico.",
+        "Si el estudiante queda en el PIE, recibe apoyos dentro de la sala y horas de profesionales. Pide que te expliquen el plan de apoyo y pregunta cada semestre cómo va."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "pgu",
+      "nombre": "Pensión Garantizada Universal (PGU)",
+      "area": "Adulto Mayor",
+      "desc": "Pago mensual del IPS desde los 65 años: hasta $231.732 entre 65 y 74 años, y hasta $250.275 desde los 75 (desde septiembre de 2026). Compatible con seguir trabajando.",
+      "monto": {
+        "tipo": "mensual",
+        "valor": 231732,
+        "variantes": [
+          {
+            "condicion": "edad75mas",
+            "valor": 250275
+          }
+        ]
+      },
+      "fuente": {
+        "texto": "ChileAtiende · IPS · Superintendencia de Pensiones",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/76583-pension-garantizada-universal-pgu",
+        "texto": "Solicitar la PGU"
+      },
+      "docs": "Cédula vigente, ClaveÚnica y Registro Social de Hogares. Requisitos: 65 años o más, no estar en el 10% de mayores ingresos, 20 años viviendo en Chile desde los 20 años y 4 de los últimos 5 años.",
+      "convocatoria": null,
+      "ruta": [
+        "Antes de pedirla, asegúrate de estar en el Registro Social de Hogares: el IPS lo usa para revisar que no estés en el 10% de mayores ingresos.",
+        "Puedes iniciar la solicitud desde los 64 años y 9 meses. Entra a ChileAtiende con ClaveÚnica, o revisa con tu RUN si cumples los requisitos.",
+        "Si prefieres presencial: cualquier sucursal ChileAtiende con la cédula, o llama al 101. También sirve tu AFP o una municipalidad en convenio con el IPS.",
+        "Aprobada, el pago es mensual y se suma a la pensión de AFP si existe. Ojo: no cobrarla por 6 meses seguidos la suspende."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "vinculos",
+      "nombre": "Programa Vínculos (acompañamiento a mayores que viven solos)",
+      "area": "Adulto Mayor",
+      "desc": "Acompañamiento psicosocial de 24 meses con monitor a domicilio + bonos y prestaciones. No se postula: se accede por invitación municipal.",
+      "monto": null,
+      "fuente": {
+        "texto": "chileseguridadesyoportunidades.gob.cl · SENAMA",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.senama.gob.cl",
+        "texto": "Ir a senama.gob.cl"
+      },
+      "docs": "RSH al día (el programa selecciona con esos datos).",
+      "convocatoria": null,
+      "ruta": [
+        "Este programa no se postula: la municipalidad invita a personas de 65+ en situación de vulnerabilidad que viven solas o con una persona.",
+        "Lo que sí puedes hacer: verificar que el RSH esté al día y refleje la situación real del hogar (vivir solo/a).",
+        "Acércate al departamento social o la oficina del adulto mayor de tu municipalidad y manifiesta interés en Vínculos.",
+        "Si eres seleccionado/a, un monitor comunitario te acompaña con sesiones en tu casa y actividades grupales, más acceso a bonos."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "centrosDiurnos",
+      "nombre": "Centros Diurnos SENAMA",
+      "area": "Cuidados",
+      "desc": "Atención integral durante el día (talleres, estimulación, alimentación) para mayores con dependencia leve, manteniéndolos en su entorno.",
+      "monto": null,
+      "fuente": {
+        "texto": "senama.gob.cl",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.senama.gob.cl",
+        "texto": "Ir a senama.gob.cl"
+      },
+      "docs": "Cédula, RSH (4 primeros tramos de calificación socioeconómica).",
+      "convocatoria": null,
+      "ruta": [
+        "Ubica el Centro Diurno Comunitario más cercano: pregunta en la oficina del adulto mayor de tu municipalidad o en senama.gob.cl.",
+        "Verifica los requisitos: 60+, dependencia leve y estar en los 4 primeros tramos del RSH.",
+        "Solicita la incorporación en el centro; a mayor edad, mayor prioridad de ingreso.",
+        "Se define un plan de atención integral de 6 meses (renovable), con participación mínima de 3 veces por semana."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "cuidadosDom",
+      "nombre": "Cuidados Domiciliarios SENAMA",
+      "area": "Cuidados",
+      "desc": "Apoyo en las actividades de la vida diaria para mayores con dependencia moderada o severa que no cuentan con cuidador.",
+      "monto": null,
+      "fuente": {
+        "texto": "senama.gob.cl",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.senama.gob.cl",
+        "texto": "Ir a senama.gob.cl"
+      },
+      "docs": "Cédula, RSH; se evalúa el nivel de dependencia.",
+      "convocatoria": null,
+      "ruta": [
+        "Contacta la oficina del adulto mayor de tu municipalidad o la coordinación regional de SENAMA y pide la evaluación para Cuidados Domiciliarios.",
+        "Se evalúa la dependencia (moderada/severa), la ausencia de cuidador principal y la vulnerabilidad socioeconómica.",
+        "Si corresponde, un asistente de cuidados va al domicilio a apoyar las actividades diarias.",
+        "Si tu comuna aún no tiene el programa, Chile Cuida es la alternativa a explorar."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "pacam",
+      "nombre": "PACAM (alimentación complementaria del adulto mayor)",
+      "area": "Salud",
+      "desc": "Entrega mensual gratuita de alimentos fortificados (crema y bebida láctea Años Dorados) para personas de 70 años o más en Fonasa, en el consultorio.",
+      "monto": null,
+      "fuente": {
+        "texto": "minsal.cl · ChileAtiende",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/15622-programa-de-alimentacion-complementaria-del-adulto-mayor-pacam",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "Cédula, certificado de afiliación a Fonasa y estar inscrito/a en el consultorio de tu domicilio, con los controles y vacunas al día.",
+      "convocatoria": null,
+      "ruta": [
+        "Verifica la inscripción en el CESFAM que corresponde a tu domicilio (si no, inscríbete con cédula y un comprobante de dirección).",
+        "Ten al día el control de salud del adulto mayor (EMPAM), el control cardiovascular y las vacunas: son requisito para recibir el PACAM.",
+        "Retira los alimentos cada mes en el mismo consultorio, en la fecha que te indiquen.",
+        "Es compatible con la PGU y los demás beneficios."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "bonoInvierno",
+      "nombre": "Bono de Invierno",
+      "area": "Adulto Mayor",
+      "desc": "Pago extra de $81.257 que llega una vez al año junto con la pensión de mayo. No se postula: llega solo.",
+      "monto": {
+        "tipo": "unico",
+        "valor": 81257
+      },
+      "fuente": {
+        "texto": "ChileAtiende · IPS (monto 2026)",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/39484-bono-de-invierno",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "Ninguno: es automático. Solo necesitas tu cédula si vas a consultar.",
+      "convocatoria": null,
+      "ruta": [
+        "Revisa si cumples: tener 65 años o más al 1 de mayo y recibir una pensión que no supere los $231.440. Si solo recibes la PGU, te corresponde igual.",
+        "No tienes que hacer ningún trámite. Si te corresponde, el pago llega solo con la pensión de mayo.",
+        "Para confirmar si te tocó, revisa tu liquidación de pensión con ClaveÚnica, o llama al 101 de ChileAtiende.",
+        "Si crees que te correspondía y no llegó, consulta en tu organismo previsional (AFP, IPS o el que te pague la pensión)."
+      ],
+      "validacion_experta": false,
+      "observaciones": [
+        "v5.0: verificado en ChileAtiende (ficha 39484, actualizada 14-04-2026, revisada 23-10-2026). Requiere recibir una pensión; quien recibe solo la PGU tiene derecho aunque supere el tope."
+      ]
+    },
+    {
+      "id": "bodasOro",
+      "nombre": "Bono Bodas de Oro (50 años de matrimonio)",
+      "area": "Adulto Mayor",
+      "desc": "Pago único de $463.166 al cumplir 50 años de matrimonio, repartido en $231.583 para cada cónyuge.",
+      "monto": {
+        "tipo": "unico",
+        "valor": 231583,
+        "por_persona": true
+      },
+      "fuente": {
+        "texto": "IPS · ChileAtiende (monto desde octubre 2025)",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "Cédulas de identidad de ambos y certificado de matrimonio. Requisitos: Registro Social de Hogares en el 80% más vulnerable, vivir juntos y 4 de los últimos 5 años en Chile.",
+      "convocatoria": "Hay un año de plazo desde la fecha del aniversario. Pasado ese plazo se pierde.",
+      "ruta": [
+        "Fíjate en la fecha exacta del aniversario: el plazo para pedirlo es de un año desde que se cumplen los 50.",
+        "Reúne el certificado de matrimonio y las cédulas de ambos.",
+        "Pídanlo los dos juntos en una sucursal ChileAtiende o por videoatención. Para confirmar si les corresponde, llamen al 101.",
+        "El pago se reparte en partes iguales. Si uno fallece después de cumplir los 50 años, quien sobrevive puede pedir su parte."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "vacacionesTE",
+      "nombre": "Vacaciones Tercera Edad (SERNATUR)",
+      "area": "Cultura y transporte",
+      "desc": "Paquetes turísticos todo incluido con subsidio estatal de 25% a 75%, desde los 60 años (o 18+ si es pensionado/a o tiene discapacidad). Sin postulación.",
+      "monto": null,
+      "fuente": {
+        "texto": "vacacionesterceraedad.cl · ChileAtiende",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.vacacionesterceraedad.cl",
+        "texto": "Ver destinos y agencias"
+      },
+      "docs": "Solo la cédula de identidad. Sin RSH para los cupos regulares.",
+      "convocatoria": null,
+      "ruta": [
+        "Revisa los destinos y precios en vacacionesterceraedad.cl (el programa opera entre marzo y diciembre, en temporada baja).",
+        "Compra el paquete directamente en una agencia de viajes autorizada (lista en el mismo sitio) presentando la cédula. Incluye transporte, alojamiento, comidas, excursiones y seguro.",
+        "Puedes llevar un acompañante mayor de 18 años con los mismos beneficios.",
+        "Si el hogar está en el 60% del RSH, existe el cupo social con mayor subsidio: se pide en la municipalidad."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "tarifaAM",
+      "nombre": "Tarifa rebajada en transporte público (50%)",
+      "area": "Cultura y transporte",
+      "desc": "Desde los 65 años, pasaje a mitad de precio en el transporte público de todo el país. En Santiago: $390 en bus, Metro y TrenNos con la tarjeta Bip! Adulto Mayor.",
+      "monto": null,
+      "fuente": {
+        "texto": "Ventanilla Única Social · Red Movilidad",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.ventanillaunicasocial.gob.cl/ficha/345/rebaja-tarifaria-transporte-adultos-mayores",
+        "texto": "Ver en Ventanilla Única Social"
+      },
+      "docs": "Cédula de identidad (65+). La tarjeta cuesta $1.550, o es gratuita vía Caja de Compensación.",
+      "convocatoria": null,
+      "ruta": [
+        "En Santiago necesitas la tarjeta Bip! Adulto Mayor: el pasaje queda en $390 en bus y Metro, a cualquier hora y con combinaciones. Si tienes la antigua TAM de Metro, deja de servir al sacar la Bip!.",
+        "Solicítala gratis en tu Caja de Compensación (llama antes de ir), o cómprala en oficinas de Metro o sucursales IPS/ChileAtiende.",
+        "El descuento se aplica automáticamente al pagar con la tarjeta.",
+        "En la mayoría de las regiones basta con mostrar la cédula al subir. En Valparaíso (Metro y Merval) se pide una tarjeta en las estaciones Puerto, Viña del Mar o Limache. No aplica en colectivos, taxis ni buses interurbanos."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "culturaAM",
+      "nombre": "Cultura y parques: entradas liberadas o rebajadas",
+      "area": "Cultura y transporte",
+      "desc": "Museos estatales con entrada liberada, y acceso gratuito o rebajado a parques nacionales y áreas protegidas CONAF para personas mayores.",
+      "monto": null,
+      "fuente": {
+        "texto": "patrimonio.gob.cl · conaf.cl",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.patrimonio.gob.cl",
+        "texto": "Ir a patrimonio.gob.cl"
+      },
+      "docs": "Solo la cédula de identidad.",
+      "convocatoria": null,
+      "ruta": [
+        "Los museos del Servicio Nacional del Patrimonio (Bellas Artes, Histórico Nacional, Historia Natural y museos regionales) tienen entrada liberada: solo llega y entra.",
+        "En los parques nacionales y reservas administrados por CONAF, las personas mayores chilenas tienen entrada liberada o rebajada: muestra la cédula en la portería.",
+        "Para visitas en grupo (club de adulto mayor), muchas municipalidades coordinan viajes de Turismo Social gratuitos de un día: pregunta en la oficina del adulto mayor.",
+        "Revisa también la cartelera de actividades gratuitas para mayores en centros culturales municipales."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "fuas",
+      "nombre": "Gratuidad y becas de arancel (vía FUAS)",
+      "area": "Educación",
+      "desc": "Gratuidad (RSH 60% en instituciones adscritas) y becas Bicentenario, Juan Gómez Millas y Nuevo Milenio, todas con un solo formulario.",
+      "monto": null,
+      "fuente": {
+        "texto": "fuas.cl · portal.beneficiosestudiantiles.cl",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.fuas.cl",
+        "texto": "Ir a fuas.cl"
+      },
+      "docs": "ClaveÚnica, datos del grupo familiar e ingresos; luego matrícula en institución compatible.",
+      "convocatoria": "Para estudiar en 2027: del 1 al 22 de octubre de 2026. Suele abrir un segundo período para rezagados a comienzos de año.",
+      "ruta": [
+        "Completa el FUAS en fuas.cl. Para estudiar en 2027, el plazo es del 1 al 22 de octubre de 2026: no lo dejes para el último día.",
+        "Revisa la preselección según tu nivel socioeconómico en el portal de resultados (enero).",
+        "Matricúlate en una institución adscrita (gratuidad) o acreditada (becas): sin matrícula no se asigna el beneficio.",
+        "Resultado final en marzo. Si no calificas, existe la apelación y el arancel ajustado con el certificado RSH."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "baes",
+      "nombre": "Beca de Alimentación BAES (JUNAEB)",
+      "area": "Educación",
+      "desc": "$48.000 mensuales en tarjeta electrónica para alimentos ($50.000 en Magallanes). No se postula: se asigna automáticamente.",
+      "monto": {
+        "tipo": "mensual",
+        "valor": 48000
+      },
+      "fuente": {
+        "texto": "junaeb.cl · Ventanilla Única Social",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.junaeb.cl",
+        "texto": "Ir a junaeb.cl"
+      },
+      "docs": "Ninguno adicional: se activa al tener gratuidad, CAE o beca de arancel, con RSH en deciles 1 a 6.",
+      "convocatoria": null,
+      "ruta": [
+        "La BAES no se postula: si completaste el FUAS y obtuviste gratuidad, beca de arancel o CAE (deciles 1-6 del RSH), se asigna sola.",
+        "Consulta los resultados BAES en marzo en junaeb.cl.",
+        "Confirmado el beneficio, descarga la app (Pluxee en la RM, Edenred en regiones) y activa la tarjeta.",
+        "Úsala en supermercados, ferias y locales adheridos. Se renueva año a año si mantienes el beneficio base."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "tne",
+      "nombre": "Tarjeta Nacional Estudiantil (TNE)",
+      "area": "Cultura y transporte",
+      "desc": "Tarifa rebajada en el transporte público para estudiantes de básica, media y superior, todo el año.",
+      "monto": null,
+      "fuente": {
+        "texto": "tne.cl · JUNAEB",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.tne.cl",
+        "texto": "Ir a tne.cl"
+      },
+      "docs": "Matrícula vigente; foto y cédula para la primera emisión.",
+      "convocatoria": null,
+      "ruta": [
+        "Básica y media: el colegio gestiona la TNE. Superior: la primera emisión se solicita con la matrícula (captura de foto en puntos TNE).",
+        "Cada año se revalida: en oficinas o tótems de JUNAEB/TNE con la matrícula del año.",
+        "Si se pierde o daña, pide la reposición en tne.cl (tiene costo menor).",
+        "Vale para todo el transporte público regulado, todos los días del año."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "becaIndigena",
+      "nombre": "Beca Indígena (JUNAEB)",
+      "area": "Educación",
+      "desc": "Aporte de libre disposición en cuotas para estudiantes de ascendencia indígena acreditada, desde básica hasta superior.",
+      "monto": null,
+      "fuente": {
+        "texto": "junaeb.cl",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.junaeb.cl",
+        "texto": "Ir a junaeb.cl"
+      },
+      "docs": "Certificado de ascendencia CONADI, RSH (60% de menores ingresos), notas (promedio mínimo según nivel).",
+      "convocatoria": "Ventana anual: diciembre–enero.",
+      "ruta": [
+        "Obtén el certificado de ascendencia indígena en CONADI (si el apellido es indígena, es directo; si no, con documentación familiar).",
+        "Verifica requisitos: RSH dentro del 60% y promedio mínimo (5.0 en básica/media; 4.5 para continuar en superior).",
+        "Postula o renueva en el portal de becas JUNAEB en la ventana anual (diciembre-enero).",
+        "El pago llega en cuotas durante el año (hasta 10). Compatible con gratuidad y otras becas."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "junaebEscolar",
+      "nombre": "Beneficios escolares JUNAEB (PAE, útiles, lentes)",
+      "area": "Educación",
+      "desc": "Alimentación escolar diaria, set de útiles y atención oftalmológica/lentes para estudiantes de colegios municipales y subvencionados. Mayormente automáticos.",
+      "monto": null,
+      "fuente": {
+        "texto": "junaeb.cl",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.junaeb.cl",
+        "texto": "Ir a junaeb.cl"
+      },
+      "docs": "Estar matriculado en colegio municipal o particular subvencionado; el colegio gestiona.",
+      "convocatoria": null,
+      "ruta": [
+        "Estos beneficios se asignan por el colegio: confirma con el encargado JUNAEB del establecimiento que el estudiante está en las nóminas.",
+        "El PAE (desayuno/almuerzo) opera todos los días de clases; los útiles se entregan al inicio del año.",
+        "Para lentes o atención dental, pide en el colegio la derivación a los programas de Servicios Médicos JUNAEB.",
+        "Si cambias de colegio, avisa al encargado del nuevo establecimiento para no perder continuidad."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "becaPresidente",
+      "nombre": "Beca Presidente de la República (mérito escolar)",
+      "area": "Educación",
+      "desc": "Aporte mensual (0,62 UTM) para estudiantes de media con promedio destacado (6.0+) y situación socioeconómica acreditada.",
+      "monto": null,
+      "fuente": {
+        "texto": "junaeb.cl",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.junaeb.cl",
+        "texto": "Ir a junaeb.cl"
+      },
+      "docs": "Concentración de notas (promedio 6.0 o superior), RSH, formulario de postulación.",
+      "convocatoria": "Ventana anual: diciembre–enero.",
+      "ruta": [
+        "Verifica el promedio: se exige 6.0 o superior en enseñanza media, más situación socioeconómica que justifique el apoyo.",
+        "Postula en el portal de becas JUNAEB en la ventana anual (normalmente diciembre-enero).",
+        "Adjunta las notas y la documentación del hogar (RSH).",
+        "El pago es mensual (10 cuotas al año) y se puede mantener en la educación superior con promedio 5.0+."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "bonoLogroEscolar",
+      "nombre": "Bono Logro Escolar",
+      "area": "Educación",
+      "desc": "Premio en dinero para estudiantes con buenas notas: $85.057 o $51.036 según el puesto. No se postula, llega solo.",
+      "monto": {
+        "tipo": "unico",
+        "valor": 85057
+      },
+      "fuente": {
+        "texto": "ChileAtiende · Ministerio de Desarrollo Social y Familia",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/20063-bono-logro-escolar",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "Ninguno: es automático. Necesitas CuentaRUT de BancoEstado para recibir el pago.",
+      "convocatoria": "El pago 2026 empezó el 14 de septiembre.",
+      "ruta": [
+        "Te corresponde si el estudiante cursó entre 5° básico y 4° medio el año pasado, tiene menos de 24 años y quedó en el 30% de mejor rendimiento de su curso.",
+        "La familia debe estar en el 30% más vulnerable del Registro Social de Hogares al 31 de marzo del año anterior al pago. Ojo: si tu cartola dice 40%, no significa que estés dentro del 30%.",
+        "No hay que postular. El Ministerio de Educación informa las notas y se arma la nómina sola.",
+        "Revisa si te tocó con tu RUN en el sitio del Bono Logro Escolar. El pago llega a la CuentaRUT de BancoEstado."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "paseCultural",
+      "nombre": "Pase Cultural ($50.000 para cultura)",
+      "area": "Cultura y transporte",
+      "desc": "$50.000 por una sola vez para libros, cine, teatro, conciertos y discos. Hay que activarlo: no llega solo.",
+      "monto": {
+        "tipo": "unico",
+        "valor": 50000
+      },
+      "fuente": {
+        "texto": "ChileCultura · ChileAtiende",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/128816-pase-cultural",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "ClaveÚnica. Si no tienes CuentaRUT de BancoEstado, la puedes pedir al activar el beneficio.",
+      "convocatoria": "Es para quienes cumplan 18 o 19 años durante 2026, por una sola vez.",
+      "ruta": [
+        "Revisa si cumples: cumplir 18 o 19 años durante 2026, ser chileno o extranjero con residencia definitiva, estar en el 60% del Registro Social de Hogares al 1 de diciembre de 2025, y no haberlo recibido en 2025.",
+        "Actívalo en el sitio de Ventanilla Única Social o de ChileCultura. También puedes pedir una videoatención o ir a una sucursal de ChileAtiende.",
+        "La plata llega a un Bolsillo Electrónico asociado a tu CuentaRUT. No se puede sacar en cajero: solo sirve para comprar cultura.",
+        "Úsalo en cine, teatro, conciertos, libros, cómics o vinilos. No hay compra mínima. Para quienes lo activaron en 2025 el plazo fue de 12 meses; confirma el plazo 2026 al activarlo."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "postgradoANID",
+      "nombre": "Beca ANID de Magíster Nacional",
+      "area": "Educación",
+      "desc": "Financia un magíster acreditado en una universidad chilena por hasta 2 años. No incluye programas de negocios, finanzas ni marketing.",
+      "monto": null,
+      "fuente": {
+        "texto": "ChileAtiende · ANID",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/74927-beca-de-magister-nacional",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "Concentración de notas de pregrado, certificado de título o licenciatura, cartas de recomendación y constancia de postulación o admisión al programa.",
+      "convocatoria": "Se postula entre octubre y diciembre para el año siguiente (la convocatoria 2026 fue del 22 de octubre al 4 de diciembre de 2025).",
+      "ruta": [
+        "Revisa que cumples lo básico: ser chileno o extranjero con residencia definitiva, tener licenciatura o título profesional, y promedio de pregrado de 5,0 o más, o estar en el 30% superior de tu generación.",
+        "Elige un programa de magíster acreditado por la Comisión Nacional de Acreditación e impartido por una universidad chilena. Sin acreditación, la beca no se puede usar.",
+        "Postula formalmente al programa: puedes postular a la beca estando en proceso de admisión, no necesitas estar matriculado todavía.",
+        "Postula a la beca en el sitio de ANID dentro de la ventana. Si tienes discapacidad, ascendencia indígena o estudiaste fuera de la Región Metropolitana, hay bonificaciones de puntaje: adjunta el certificado que corresponda."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "doctoradoANID",
+      "nombre": "Beca ANID de Doctorado (nacional o en el extranjero)",
+      "area": "Educación",
+      "desc": "Financia un doctorado por hasta 4 años, con extensión para escribir la tesis. La línea Becas Chile financia doctorados fuera del país.",
+      "monto": null,
+      "fuente": {
+        "texto": "ChileAtiende · ANID",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/74892-beca-de-doctorado-nacional",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "Certificado de grado o título, concentración de notas, cartas de recomendación y proyecto o carta de intención según la convocatoria.",
+      "convocatoria": "Doctorado Nacional: la convocatoria anterior cerró el 11 de noviembre de 2025. La fecha de la próxima aún no está confirmada aquí: revísala en el sitio de ANID. Becas Chile en el extranjero tiene su propio calendario.",
+      "ruta": [
+        "Define el camino: doctorado en una universidad chilena acreditada, o doctorado en el extranjero por la línea Becas Chile.",
+        "Contacta a un posible profesor guía y asegura la postulación al programa antes de que abra la convocatoria de la beca.",
+        "Reúne las cartas de recomendación con tiempo: se envían directamente por quienes recomiendan y es lo que más se atrasa.",
+        "Postula en el sitio de ANID. Es un concurso competitivo: prepara la postulación con tiempo y revisa las bases de cada año."
+      ],
+      "validacion_experta": false,
+      "observaciones": [
+        "v5.0: link corregido y cierre de la convocatoria anterior verificados en ChileAtiende (ficha 74892, actualizada 13-10-2025). Requisitos y ruta aún sin revisar."
+      ]
+    },
+    {
+      "id": "caeContinuidad",
+      "nombre": "CAE para segunda carrera o continuidad de estudios",
+      "area": "Educación",
+      "desc": "Crédito con aval del Estado para seguir estudiando después de una primera carrera, cuando la gratuidad ya no está disponible.",
+      "monto": null,
+      "fuente": {
+        "texto": "Mineduc · Comisión Ingresa",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "ClaveÚnica, datos del grupo familiar e ingresos, y matrícula en una institución acreditada adscrita al CAE.",
+      "convocatoria": "Se postula junto con el FUAS: octubre-noviembre y febrero-marzo.",
+      "ruta": [
+        "Ten claro el punto de partida: la gratuidad y las becas de arancel se asignan una sola vez, pero el crédito sí permite seguir estudiando.",
+        "Si ya tuviste CAE, pregunta en la nueva institución si puedes seguir con continuidad de estudios antes de postular de nuevo. Las reglas cambian: confírmalo en Ayuda Mineduc (600 600 26 26).",
+        "Si no tienes CAE, completa el FUAS en la ventana correspondiente y postula al crédito.",
+        "Antes de firmar, calcula la cuota: el crédito se paga después de egresar y el monto depende del arancel de referencia de la carrera, no del arancel real."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "suf",
+      "nombre": "Subsidio Único Familiar (SUF)",
+      "area": "Familia y Hogar",
+      "desc": "Pago mensual de $22.601 por cada carga familiar. Si la carga es una persona con discapacidad, el monto es el doble: $45.202.",
+      "monto": {
+        "tipo": "mensual",
+        "valor": 22601,
+        "variantes": [
+          {
+            "condicion": "cargaDisc",
+            "valor": 45202
+          }
+        ],
+        "por_carga": true
+      },
+      "fuente": {
+        "texto": "ChileAtiende · IPS (montos desde julio 2026)",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/33112-subsidio-familiar-suf",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "Cédula, certificado de nacimiento de las cargas, y certificado de alumno regular si tienen más de 6 años.",
+      "convocatoria": null,
+      "ruta": [
+        "Si tu hogar está en el 40% más vulnerable del Registro Social de Hogares y la carga es menor de 18 años, el subsidio llega solo: no tienes que hacer nada.",
+        "Si estás entre el 40% y el 60%, sí hay que solicitarlo: anda al departamento social de tu municipalidad con los documentos.",
+        "Hay condiciones que mantener: los menores de 8 años deben estar en los controles de salud, y los mayores de 6 años deben estar estudiando. Esto último no se exige si la carga es una persona con discapacidad.",
+        "Si empiezas a trabajar formalmente, debes renunciar al SUF en el municipio y pedir la Asignación Familiar en su lugar. Mantienes el mismo monto."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "asignacionFamiliar",
+      "nombre": "Asignación Familiar",
+      "area": "Familia y Hogar",
+      "desc": "Pago mensual por cada carga familiar, para quienes trabajan formalmente o cotizan como independientes.",
+      "monto": null,
+      "fuente": {
+        "texto": "IPS · ChileAtiende",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.ips.gob.cl",
+        "texto": "Ver en ips.gob.cl"
+      },
+      "docs": "Cédula, certificados de nacimiento de las cargas, certificado de matrimonio si corresponde, y certificado de alumno regular para hijos mayores de 18 que estudian.",
+      "convocatoria": null,
+      "ruta": [
+        "Si trabajas con contrato, la gestiona tu empleador: pide en la empresa que reconozcan tus cargas familiares.",
+        "Si trabajas a honorarios o por cuenta propia y cotizas, tienes que acreditar tus cargas directamente en una sucursal del IPS.",
+        "El monto depende del tramo de ingresos. Para los independientes, el IPS usa el promedio de las rentas del año anterior.",
+        "Las cargas menores de 18 se mantienen solas. Si tienes hijos mayores de 18 que estudian, hay que renovar el certificado de alumno regular cada año."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "sap",
+      "nombre": "Subsidio de Agua Potable",
+      "area": "Familia y Hogar",
+      "desc": "Descuento entre 25% y 85% en la cuenta del agua. Se pide en la municipalidad durante todo el año.",
+      "monto": null,
+      "fuente": {
+        "texto": "ChileAtiende · Ventanilla Única Social",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/51314-subsidio-al-pago-de-consumo-de-agua-potable-y-servicio-de-alcantarillado",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "Cédula de identidad y la última boleta del agua pagada.",
+      "convocatoria": null,
+      "ruta": [
+        "Revisa si te conviene: el subsidio es para hogares que gastan un 5% o más de sus ingresos en la cuenta del agua.",
+        "Tienes que estar al día con la empresa sanitaria. Si debes, primero pide un convenio de pago; con el convenio vigente sí puedes postular.",
+        "Anda al departamento social de tu municipalidad con la cédula y la boleta. Se postula todo el año, pero los cupos por comuna son limitados.",
+        "El descuento se aplica solo sobre los primeros 13 m³ de consumo. Si tu familia participa en Seguridades y Oportunidades, cubre el 100% de los primeros 15 m³."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "afper",
+      "nombre": "Aporte Familiar Permanente",
+      "area": "Familia y Hogar",
+      "desc": "Pago de $66.834 por cada carga familiar, que llega una vez al año entre febrero y marzo. No se postula.",
+      "monto": {
+        "tipo": "unico",
+        "valor": 66834,
+        "por_carga": true
+      },
+      "fuente": {
+        "texto": "Ventanilla Única Social · IPS (monto 2026)",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.ventanillaunicasocial.gob.cl/ficha/80/aporte-familiar-permanente",
+        "texto": "Ver en Ventanilla Única Social"
+      },
+      "docs": "Ninguno: es automático.",
+      "convocatoria": null,
+      "ruta": [
+        "Te corresponde si al 31 de diciembre del año anterior cobrabas el Subsidio Familiar (SUF), la Asignación Familiar o Maternal, o eras parte de Seguridades y Oportunidades.",
+        "Si fue por SUF o Asignación Familiar, recibes un aporte por cada carga. Si fue por Seguridades y Oportunidades, recibes uno por familia.",
+        "No hay que postular. El pago llega entre febrero y marzo.",
+        "Para revisar si tienes plata sin cobrar, consulta con tu RUN en Mi ChileAtiende."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "arriendoEspecial",
+      "nombre": "Subsidio de Arriendo: llamado especial (mayores y discapacidad)",
+      "area": "Vivienda",
+      "desc": "Cubre hasta el 90% del arriendo mensual (213 UF en total). Para personas de 60 años o más, y para personas con discapacidad desde los 18 años. No pide ahorro.",
+      "monto": null,
+      "fuente": {
+        "texto": "MINVU · ChileAtiende",
+        "verificada": "2026-10"
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/53223-subsidio-de-arriendo-de-vivienda-llamado-especial-para-personas-mayores-y-personas-con-discapacidad",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "Cédula, ClaveÚnica y Registro Social de Hogares. Para postular por discapacidad, la credencial del Registro Nacional de la Discapacidad.",
+      "convocatoria": "Un llamado al año. El de 2026 fue del 8 de septiembre al 8 de octubre y ya cerró. Prepárate para el próximo.",
+      "ruta": [
+        "Revisa si califica: tener 60 años o más (o cumplirlos ese año), o tener 18 años o más y la credencial de discapacidad. En ambos casos, estar hasta el 70% del Registro Social de Hogares y tener ingresos entre 5 y 25 UF al mes.",
+        "Este llamado no pide ahorro previo, y tampoco hace falta estar arrendando ahora: puedes buscar la vivienda después.",
+        "Postula en minvu.cl con ClaveÚnica, o en una oficina del SERVIU. Si la persona no puede ir, otra puede postular por ella con un poder simple, sin notario.",
+        "Suma puntaje por edad, por discapacidad y por tener una persona cuidadora en el hogar. Si corresponde alguno, asegúrate de declararlo."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "ds52",
+      "nombre": "Subsidio de Arriendo DS 52 (llamado regular)",
+      "area": "Vivienda",
+      "desc": "Ayuda mensual para pagar el arriendo: 170 UF en total, que se van usando mes a mes durante hasta 8 años.",
+      "monto": null,
+      "fuente": {
+        "texto": "MINVU · ChileAtiende",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.chileatiende.gob.cl/fichas/29888-subsidio-de-arriendo-de-vivienda",
+        "texto": "Ver en ChileAtiende"
+      },
+      "docs": "Cédula, ClaveÚnica, libreta de ahorro para la vivienda con al menos 4 UF, y datos del grupo familiar.",
+      "convocatoria": "Un llamado al año. En 2026 fue del 7 de julio al 7 de agosto y ya cerró.",
+      "ruta": [
+        "Abre una cuenta de ahorro para la vivienda y junta al menos 4 UF (unos $163.000). La plata tiene que estar depositada antes de postular.",
+        "Ten el Registro Social de Hogares al día: se exige estar hasta el 70% más vulnerable.",
+        "Postula en minvu.cl con ClaveÚnica o presencialmente en una oficina del SERVIU cuando abra el llamado.",
+        "Si te lo dan, busca una vivienda que cumpla los requisitos del SERVIU: el arriendo no puede superar las 11 UF (13 UF en la Región Metropolitana y las regiones extremas)."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "ds49",
+      "nombre": "Subsidio habitacional DS 49 (hasta 950 UF)",
+      "area": "Vivienda",
+      "desc": "Para comprar o construir una vivienda sin crédito hipotecario. La discapacidad suma puntaje.",
+      "monto": null,
+      "fuente": {
+        "texto": "minvu.gob.cl · ChileAtiende",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.minvu.gob.cl",
+        "texto": "Ir a minvu.gob.cl"
+      },
+      "docs": "Cédula, RSH, cuenta de ahorro para la vivienda con ahorro mínimo (10 UF).",
+      "convocatoria": null,
+      "ruta": [
+        "Abre una cuenta de ahorro para la vivienda (BancoEstado u otra) y junta el ahorro mínimo de 10 UF.",
+        "Ten el RSH al día. Si hay una persona con discapacidad en el hogar, suma puntaje y permite pedir ajustes en la vivienda.",
+        "Postula en la ventana del MINVU (individual o con comité) en minvu.gob.cl o en el SERVIU.",
+        "Con el subsidio asignado, comienza la búsqueda o construcción. Es un trámite largo: ve por etapas."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    },
+    {
+      "id": "ds1",
+      "nombre": "Subsidio DS 1 para sectores medios (comprar o construir)",
+      "area": "Vivienda",
+      "desc": "Aporte del Estado para comprar una casa o departamento, o construir en un terreno propio, complementando con ahorro y crédito.",
+      "monto": null,
+      "fuente": {
+        "texto": "MINVU · Ventanilla Única Social",
+        "verificada": null
+      },
+      "tramite": {
+        "url": "https://www.ventanillaunicasocial.gob.cl/ficha/354/subsidio-clase-media-compra-viviendas",
+        "texto": "Ver en Ventanilla Única Social"
+      },
+      "docs": "ClaveÚnica de todos los mayores de 18 del grupo familiar, cuenta de ahorro para la vivienda y, si corresponde, preaprobación del crédito hipotecario.",
+      "convocatoria": "El primer llamado de 2026 fue del 16 al 30 de junio. Un segundo llamado 2026 aún no está confirmado por el MINVU.",
+      "ruta": [
+        "Este subsidio es para familias que no son dueñas de una vivienda y que pueden completar el valor con ahorro propio o un crédito hipotecario.",
+        "Junta el ahorro mínimo del tramo que te corresponde. Ojo con la fecha: el ahorro debe estar congelado semanas antes de que abra la postulación.",
+        "Revisa tu tramo según el Registro Social de Hogares. El Tramo I es para el 60% más vulnerable y permite comprar viviendas de hasta 1.100 UF.",
+        "Postula en línea en minvu.cl con ClaveÚnica. Si ya postulaste antes y no saliste seleccionado, revisa en MinvuConecta si tienes una propuesta automática esperándote."
+      ],
+      "validacion_experta": false,
+      "observaciones": []
+    }
+  ],
+  "glosario": {
+    "RSH": "Registro Social de Hogares. Es el registro del Estado con la información de tu hogar. Casi todos los beneficios lo usan.",
+    "RND": "Registro Nacional de la Discapacidad. Lo lleva el Registro Civil y de ahí sale la credencial de discapacidad.",
+    "COMPIN": "Comisión de Medicina Preventiva e Invalidez. Es la comisión médica de tu región que evalúa y certifica la discapacidad.",
+    "IBM": "Informe Biomédico Funcional. Lo llena el médico tratante y es el primer paso para certificar la discapacidad.",
+    "IPS": "Instituto de Previsión Social. Paga las pensiones y bonos del Estado. Se atiende en ChileAtiende.",
+    "CESFAM": "Centro de Salud Familiar: el consultorio de tu comuna.",
+    "EMPAM": "Examen de Medicina Preventiva del Adulto Mayor: el control de salud anual en el consultorio.",
+    "UF": "Unidad de Fomento. Es una unidad de valor que sube un poco cada día según la inflación. Los subsidios de vivienda se calculan en UF.",
+    "SERVIU": "Servicio de Vivienda y Urbanización: la oficina del Ministerio de Vivienda en tu región.",
+    "MINVU": "Ministerio de Vivienda y Urbanismo.",
+    "FUAS": "Formulario Único de Acreditación Socioeconómica: el formulario para pedir gratuidad, becas y créditos para estudiar.",
+    "CAE": "Crédito con Aval del Estado, para pagar estudios superiores.",
+    "TNE": "Tarjeta Nacional Estudiantil: el pase escolar para el transporte público.",
+    "JUNAEB": "Junta Nacional de Auxilio Escolar y Becas.",
+    "SENADIS": "Servicio Nacional de la Discapacidad.",
+    "SENAMA": "Servicio Nacional del Adulto Mayor.",
+    "SENCE": "Servicio Nacional de Capacitación y Empleo.",
+    "CONADI": "Corporación Nacional de Desarrollo Indígena.",
+    "ANID": "Agencia Nacional de Investigación y Desarrollo.",
+    "PACAM": "Programa de Alimentación Complementaria del Adulto Mayor.",
+    "BAES": "Beca de Alimentación para la Educación Superior.",
+    "PGU": "Pensión Garantizada Universal.",
+    "RUN": "Rol Único Nacional: el número de tu cédula de identidad."
+  }
+}
