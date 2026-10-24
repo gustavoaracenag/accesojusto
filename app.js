@@ -85,7 +85,9 @@
   // ---------- Aviso de prototipo: compacto, en todas las pantallas y al imprimir ----------
   function avisoPrototipo(conLink) {
     return '<div class="aviso-proto" role="note"><div class="wrap aviso-inner">' + icono("aviso", 18) +
-      '<p class="aviso-txt"><b>Prototipo en validación.</b> Confirma cada dato en la institución antes de hacer un trámite.' +
+      '<p class="aviso-txt"><b>Prototipo en validación.</b>' +
+      '<span class="no-print"> ¿Qué mejorarías? ' + linkContacto("comentario", "", "aviso-link", "Cuéntanos en 1 minuto") + ".</span>" +
+      " Confirma cada dato en la institución antes de hacer un trámite." +
       (conLink ? ' <a href="#datos" class="no-print">Cómo revisamos</a>' : "") + "</p></div></div>";
   }
 
